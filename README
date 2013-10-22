@@ -1,0 +1,88 @@
+Module: Format Email
+Version: 1.0.0
+Author: Oliver Riesen <oliver@riesen.org>
+
+Formats outgoing email bodies (user and moderator notifications and private
+mail): optional strips HTML <tags>, BBcode [tags] and bad words from censor
+list and wordwraps the text.
+
+Tested on version 5.2.15a
+
+
+License:
+-------
+
+Free to use, modify, or redistribute this code so long as I am given credit for
+the original development somewhere. This code comes with absolutely no warranty.
+
+
+Requirements:
+------------
+
+Minimum Phorum version: 5.2.8.
+
+
+Installation:
+------------
+
+1. Unpack the archive.
+
+2. Move the directory "format_email" to the directory "mods" within your
+   Phorum installation. Don't change the directory name!
+
+3. Login as administrator in Phorum's administrative interface and go to the
+   "Modules" section.
+
+4. Enable the module "Format Email".
+
+5. Go to the module settings, change and save the options.
+
+
+Module settings:
+---------------
+
+== Strip HTML <tags>?
+
+If this option is marked HTML tags are striped from the body. This is the
+default behavior of Phorum.
+
+The default value is "checked".
+
+== Strip BBCode [tags]?
+
+If this option is marked BBCode tags are striped from the body. This is the
+default behavior of Phorum.
+
+The default value is "checked".
+
+== Replace bad words from censor list?
+
+If this option is marked bad words from censor list are replaced in the body.
+This is the default behavior of Phorum.
+
+The default value is "checked".
+
+== Wordwrap
+
+If this option is marked the body ist wordwrap (72 characters per line).
+
+The default value is "unchecked".
+
+
+Language support:
+----------------
+
+This module doesn't contain any language text.
+
+
+Sanity Checks:
+-------------
+
+If you have problems with this module login as administrator in Phorum's
+administrative interface and go to the "System Sanity Checks" section. Check
+for warnings or errors for the Format Email Module.
+
+The following check is performed:
+
+- Phorum version is 5.2.8 or greater?
+- Module settings exists?

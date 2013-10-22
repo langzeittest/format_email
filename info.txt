@@ -1,0 +1,10 @@
+title: Format Email
+desc: Formats outgoing email bodies (user and moderator notifications and private mail): optional strips HTML <tags>, BBcode [tags] and bad words from censor list and wordwraps the text.
+author: Oliver Riesen <oliver@riesen.org>
+url: http://www.phorum.org/phorum5/read.php?62,144862
+category: email
+required_version: 5.2.8
+version: 1.0.0
+
+hook: email_user_start|mod_format_email_email_user_start
+hook: sanity_checks|mod_format_email_sanity_checks

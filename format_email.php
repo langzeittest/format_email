@@ -107,6 +107,17 @@ function mod_format_email_do_sanity_checks() {
                  );
     }
 
+    // Check if the Phorum version is to high.
+    if (!phorum_compare_version(PHORUM, '5.2.21') == -1) {
+          return array(
+                     PHORUM_SANITY_CRIT,
+                     'The Phorum version is to high.',
+                     'From Phorum version 5.2.21 this module is not any '
+                         .'longer needed. Use the new &quot;How to strip quotes '
+                         .'in mails&quot; setting in &quot;General Settings&quot;.'
+                 );
+    }
+
     // Check if module settings exists.
     if (    !isset($PHORUM['mod_format_email']['strip_html'])
          || !isset($PHORUM['mod_format_email']['strip_bbcode'])
@@ -116,9 +127,9 @@ function mod_format_email_do_sanity_checks() {
                      PHORUM_SANITY_CRIT,
                      'The default settings for the module are missing.',
                      "Login as administrator in Phorum's administrative "
-                         .'interface and go to the "Modules" section. Open '
-                         .'the module settings for the Format Email '
-                         .'Module and save the default values.'
+                         .'interface and go to the &quot;Modules&quot; '
+                         .'section. Open the module settings for the Format '
+                         .'Email Module and save the default values.'
                  );
     }
 

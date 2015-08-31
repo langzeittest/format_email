@@ -1,12 +1,15 @@
 Module: Format Email
-Version: 1.0.0
+Version: 1.0.1
 Author: Oliver Riesen <oliver@riesen.org>
 
 Formats outgoing email bodies (user and moderator notifications and private
 mail): optional strips HTML <tags>, BBcode [tags] and bad words from censor
 list and wordwraps the text.
 
-Tested on version 5.2.15a
+From Phorum version 5.2.21 this module is not any longer needed. Use the new
+"How to strip quotes in mails" setting in "General Settings".
+
+Tested on version 5.2.20
 
 
 License:
@@ -19,7 +22,7 @@ the original development somewhere. This code comes with absolutely no warranty.
 Requirements:
 ------------
 
-Minimum Phorum version: 5.2.8.
+Minimum Phorum version: 5.2.8, maximum Phorum version: 5.2.20.
 
 
 Installation:
@@ -85,4 +88,5 @@ for warnings or errors for the Format Email Module.
 The following check is performed:
 
 - Phorum version is 5.2.8 or greater?
+- Phorum version is lower then 5.2.21?
 - Module settings exists?

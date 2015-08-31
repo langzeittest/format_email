@@ -4,7 +4,7 @@ author: Oliver Riesen <oliver@riesen.org>
 url: http://www.phorum.org/phorum5/read.php?62,144862
 category: email
 required_version: 5.2.8
-version: 1.0.0
+version: 1.0.1
 
 hook: email_user_start|mod_format_email_email_user_start
 hook: sanity_checks|mod_format_email_sanity_checks

@@ -90,3 +90,10 @@ The following check is performed:
 - Phorum version is 5.2.8 or greater?
 - Phorum version is lower then 5.2.21?
 - Module settings exists?
+
+
+Contribution:
+------------
+
+Contribute on GitHub:
+https://github.com/langzeittest/format_email
